@@ -16,6 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from . import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('pdf-to-docx', views.convert_pdf_to_docx),
+    #  path('send_file', views.send_file, name='send_file'),
 ]
