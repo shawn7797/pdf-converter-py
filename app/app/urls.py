@@ -20,6 +20,5 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('pdf-to-docx', views.convert_pdf_to_docx),
-    #  path('send_file', views.send_file, name='send_file'),
+    path('pdf_to_docx', views.convert_pdf_to_docx),
 ]
