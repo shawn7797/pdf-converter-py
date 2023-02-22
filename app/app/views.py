@@ -54,3 +54,7 @@ def delete_folders():
         
     if os.path.isdir('converted'):
         shutil.rmtree('converted')
+
+def home(request):
+    message = "PDF to DOCX converter on vercel"
+    return HttpResponse(message)
